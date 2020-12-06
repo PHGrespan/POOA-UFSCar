@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- siga o modelo para adicionar novos sites
+name: será usado apenas para definir de qual site é a notícia
+url: colocar url exatamente como está no site
+notice: sites normalmente utilizam mais de uma classe para definir as notícias, serão definidos aqui
+    type: tipo da notícia (exemplos: Principal, Futebol, Famosos...), nem sempre está explícito no site
+    classNotice: classe usada no código HTML para definir cada notícia  -->
+
+<sites>
+
+    <site>
+        <name>UOL</name>
+        <url>https://www.uol.com.br/</url>
+        <notices>
+            <notice>
+                <type>Principal</type>
+                <classNotice>h1.titulo.color2</classNotice>
+            </notice>
+            <notice>
+                <type>Secundária</type>
+                <classNotice>h2.titulo.color2</classNotice>
+            </notice>
+            <notice>
+                <type>Famosos</type>
+                <classNotice>p.texto.color2</classNotice>
+            </notice>
+        </notices>
+    </site>
+
+    <site>
+        <name>Globo</name>
+        <url>https://www.globo.com/</url>
+        <notices>
+            <notice>
+                <type>Principal</type>
+                <classNotice>p.hui-premium__title</classNotice>
+            </notice>
+            <notice>
+                <type>Secundária</type>
+                <classNotice>p.hui-highlight-title</classNotice>
+            </notice>
+        </notices>
+    </site>
+
+</sites>
